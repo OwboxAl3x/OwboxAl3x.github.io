@@ -1,0 +1,136 @@
+
+body{
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+
+}
+
+/* --------------------------------------------------------------------------------------------- Header ---------------------------------------------------------------------------------------- */
+
+#header{
+    
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    
+}
+
+/* ------------------------------------------------ Name --------------------------------------------------- */
+
+#name{
+    
+    margin-left: 16%;
+    color: white;
+    text-align: left;
+    
+}
+
+/* ------------------------------------------------ Nav ---------------------------------------------------- */
+
+#navegador{
+    
+    border: 0;
+    background-color: black;
+    margin-top: 20px;
+    
+}
+
+#navegador ul li{
+    
+    list-style-type: none;
+    display: inline;
+    padding: 3px 8px 3px 8px;
+    font-size: 18px;
+    
+    
+}
+
+#navegador ul li a{
+    
+    text-decoration: none;
+    color: white;
+    
+}
+
+#navegador ul li a:hover{
+    
+    color: white;
+    
+}
+
+/* --------------------------------------------------------------------------------------------- Main ---------------------------------------------------------------------------------------- */
+
+#main{
+    
+    width: 70%;
+    
+}
+
+/* --------------------------------------------------- Fila ------------------------------------------------------- */
+
+#fila{
+    
+    padding: 15px 0;
+    
+}
+
+/* ------------------------------------------------ MainIzquierda ------------------------------------------------- */
+
+#mainIzquierdaDentro{
+    
+    
+    
+}
+
+/* ------------------------------------------------ MainCentro ---------------------------------------------------- */
+
+#mainCentroDentro{
+    
+    
+    
+}
+
+/* ------------------------------------------------ MainDerecha --------------------------------------------------- */
+
+#mainDerechaDentro{
+    
+    
+    
+}
+
+/* --------------------------------- MainIzquierda, MainCentro, MainDerecha --------------------------------------- */
+
+#mainIzquierdaDentro, #mainCentroDentro, #mainDerechaDentro{
+    
+    padding: 15px;
+    border: 1px solid #918f91;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: #e6e6e6;
+    
+}
+
+.arrowtop{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 6%;
+	right: 25px;
+	display: none;
+	text-indent: -9999px;
+	background: url(http://i.imgur.com/lIJ0rMJ.png) no-repeat;
+	cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------------------------- Footer ---------------------------------------------------------------------------------------- */
+
+#footer{
+    
+    text-align: center;
+    
+}
