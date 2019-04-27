@@ -5,7 +5,7 @@ function calcularEdad(){
 
     var years = hoy.getFullYear() - nacimiento.getFullYear();
 
-    if(hoy < nacimiento){
+    if(hoy.getMonth() < nacimiento.getMonth() && hoy.getDay() < nacimiento.getDay()){
 
         years--;
 
