@@ -13,3 +13,15 @@ function calcularEdad(){
     document.getElementById('anios').innerHTML = years;
 
 }
+
+function currentYear()
+{
+    var year = new Date();
+    document.getElementById('year').innerHTML = year.getFullYear();
+}
+
+$(document).ready(function() 
+{
+    calcularEdad();
+    currentYear();
+});
