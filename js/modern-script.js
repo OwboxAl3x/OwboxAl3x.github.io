@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setCurrentYear();
     initializeSmoothScrolling();
     initializeTypingEffect();
-    
-    console.log('🚀 Portfolio initialized successfully!');
 });
 
 // ===== THEME TOGGLE FUNCTIONALITY =====
@@ -177,7 +175,7 @@ function initializeBackToTop() {
 
 // ===== AGE CALCULATION =====
 function calculateAge() {
-    const birthDate = new Date('1990-10-12'); // December 10, 1990
+    const birthDate = new Date('1990-12-10');
     const today = new Date();
     
     let age = today.getFullYear() - birthDate.getFullYear();
@@ -229,7 +227,6 @@ function initializeTypingEffect() {
         const titles = [
             'Senior Software Developer',
             '.NET Specialist',
-            'Full Stack Developer',
             'Problem Solver'
         ];
         
@@ -308,26 +305,9 @@ function debounce(func, wait) {
 
 // Optimize scroll events
 const optimizedScrollHandler = debounce(function() {
-    // Handle scroll events here if needed
 }, 16); // ~60fps
 
 window.addEventListener('scroll', optimizedScrollHandler);
-
-// ===== CONTACT FORM ENHANCEMENT (if needed in future) =====
-function initializeContactForm() {
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Add form submission logic here
-            // For GitHub Pages, you might want to use a service like Formspree
-            
-            // Show success message
-            showNotification('Message sent successfully!', 'success');
-        });
-    }
-}
 
 // ===== NOTIFICATION SYSTEM =====
 function showNotification(message, type = 'info') {
@@ -435,15 +415,4 @@ Try the Konami Code for a surprise! ↑↑↓↓←→←→BA
 // ===== ERROR HANDLING =====
 window.addEventListener('error', function(e) {
     console.error('An error occurred:', e.error);
-    // In production, you might want to send this to an error tracking service
 });
-
-// ===== SERVICE WORKER REGISTRATION (for PWA features) =====
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        // Uncomment if you want to add PWA features
-        // navigator.serviceWorker.register('/sw.js')
-        //     .then(registration => console.log('SW registered'))
-        //     .catch(registrationError => console.log('SW registration failed'));
-    });
-}
