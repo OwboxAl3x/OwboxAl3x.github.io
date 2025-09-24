@@ -1,291 +1,584 @@
 <!DOCTYPE html>
-
-<html lang="es">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alejandro García Vallecillo - Senior Software Developer specializing in .NET, PHP, and modern web technologies">
+    <meta name="keywords" content="Alejandro Garcia Vallecillo, Software Developer, .NET, PHP, Full Stack Developer, Web Development">
+    <meta name="author" content="Alejandro García Vallecillo">
     
-    <head>
+    <title>Alejandro García Vallecillo | Senior Software Developer</title>
     
-        <title>Página Web de Alejandro Garcia Vallecillo</title>
-        <meta name="description" content="Página Personal" />
-        <meta name="keywords" content="Alejandro Garcia Vallecillo, curriculum, vitae, personal, web" />
-        <meta name="author" content="Alejandro García Vallecillo" />
-        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/bootstrap-social.css" rel="stylesheet">
-        <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
-        
-        <!-- JavaScript -->
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-        <script src="js/bootstrap.js"></script>
-        <script src="js/functions.js"></script>
-        
-        <!--<script>
-            //Se encarga de mostrar el botón cuando se hace scroll
-            $(window).scroll(function(){
-               if ($(this).scrollTop() > 200) {
-                    $('.arrowtop').fadeIn();
-               } else {
-                    $('.arrowtop').fadeOut();
-               }
-            });
-            //Se encarga de subir al top al hacer clic en el botón
-            function arriba(){
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            }
-        </script>-->
-        
-    </head>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern-style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
 
-    <body onload="calcularEdad(); currentYear();">
-        
-        <div id="general">
-        
-            <div id="header">
-
-                <div id="name">
-
-                    <h1>Alejandro García Vallecillo</h1>
-                    
-                    <h2>Software Developer</h2>
-
-                </div>
-
-                <div id="navegador">
-
-                    <ul>
-
-                        <li><a href="#soy">Quién Soy</a></li>
-                        <li><a href="#aptitudes">Aptitudes</a></li>
-                        <li><a href="#educacion">Educación</a></li>
-                        <li><a href="#experiencia">Experiencia</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-        
-            <div id="main" class="container-fluid">
-                
-                <!-- Fila con 3 columnas -->
-                <div id="fila" class="row" class="text-center">
-
-                    <!-- Columna Izquierda -->
-                    <div class="col-md-4 col-xs-12">
-                        <div class="text-center">
-                        
-                            <img src="images/FotoPerfil.jpeg" alt="Foto de Perfil" class="img-thumbnail img-responsive">
-                        
-                        </div>
-                        
-                        <br/>
-                        
-                        <a name="soy"></a>
-                        
-                        <div id="mainIzquierdaDentro" class="text-center">
-                            
-                            <h4 ><strong>Quién Soy</strong></h4>
-                            
-                            <hr style="border: 1px solid black">
-                            
-                            <p>Me llamo Alejandro García Vallecillo, tengo <time id="anios"></time> años y soy Graduado en Ingeniería Informática, por la rama de software, en la Universidad de Granada. Ademas tengo el titulo de Técnico Superior en Desarrollo de Aplicaciones Informáticas. Me gusta la programación y aprender constantemente. Soy autodidacta y en mi tiempo libre investigo sobre lenguajes de programación y tecnologías que aún no conozco.</p>
-                        
-                        </div>
-                        
-                        <br/>
-                        
-                        <a name="contacto"></a>
-                        
-                        <div id="mainIzquierdaDentro" class="text-center">
-                            
-                            <h4 ><strong>Contacto</strong></h4>
-                            
-                            <hr style="border: 1px solid black">
-                            
-                            <div class="btn-group">
-                                <h5><span class="fa fa-envelope fa-lg" aria-hidden="true"></span><a href="mailto:agarciavallecillo@gmail.com"> <strong>Gmail</strong></a></h5>
-                                <h5><span class="fa fa-phone fa-lg" aria-hidden="true"></span> 697920171</h5>
-                            </div>
-                        
-                        </div>
-                        
-                        <br/>
-                        
-                        <div id="mainIzquierdaDentro" class="text-center">
-                            
-                            <h4><strong>Redes Sociales</strong></h4>
-                            
-                            <hr style="border: 1px solid black">
-                            
-                            <div class="btn-group">
-                                <a type="button" class="btn btn-default" href="https://www.linkedin.com/in/alejandro-garc%C3%ADa-vallecillo-57172846/"><span class="fa fa-linkedin fa-lg" aria-hidden="true"></span></a>
-                                <a type="button" class="btn btn-default" href="https://github.com/OwboxAl3x"><span class="fa fa-github fa-lg" aria-hidden="true"></span></a>
-                            </div>
-                        
-                        </div>
-                        
-                        <br/>
-                    
-                    </div>
-                    
-                    <!-- Columna Central -->
-                    <div class="col-md-4 col-xs-12">
-                        
-                        <a name="experiencia"></a>
-                        
-                        <div id="mainCentroDentro">
-                            
-                            <h4 class="text-center"><strong>Experiencia</strong></h4>
-                            
-                            <hr style="border: 1px solid black">
-
-                            <p><strong>DOCPLANNER</strong></p>
-                            <p><i>Septiembre 2020 - Actualidad</i></p>
-                            <p>Estoy involucrado en proyectos .NET desarrollando herramientas para los equipos de experiencia y producto</p>
-
-                            <br>
-                            
-                            <p><strong>INGENIESIA DESARROLLO CLOUD</strong></p>
-                            <p><i>Octubre 2018 - Septiembre 2020</i></p>
-                            <p>He trabajado como desarrollador web en la aplicación ClinicCloud, además de encargarme de la migración de los datos de nuevos clientes que contratan nuestros servicios.</p>
-                            
-                            <br>
-                            
-                            <p><strong>PULEVA BIOSEARCH LIFE</strong></p>
-                            <p><i>Marzo 2010 - Junio 2010<br>Prácticas de empresa</i></p>
-                            <p>Para finalizar el módulo de Desarrollo de Aplicaciones Informáticas (SAI), estuve haciendo las prácticas de empresa programando un nuevo sistema que querían implementar con Microsoft SharePoint.</p>
-                            
-                            <br>
-                            
-                            <p><strong>VIVEROS SALINAS</strong></p>
-                            <p><i>Negocio familiar</i></p>
-                            <p>He estado trabajando en el negocio familiar desde pequeño, de cara al público y en trabajos de más esfuerzo físico, que me ha enseñado cosas muy importantes como el esfuerzo, el sacrificio y la constancia que significa llevar un negocio a la espalda.</p>
-                        
-                        </div>
-                        
-                        <br/>
-                        
-                        <a name="educacion"></a>
-                        
-                        <div id="mainCentroDentro">
-                            
-                            <h4 class="text-center"><strong>Educación</strong></h4>
-                            
-                            <hr style="border: 1px solid black">
-                            
-                            <p><strong>UNIVERSIDAD DE GRANADA</strong></p>
-                            <p><i>2014 - 2019<br>Grado en Ingeniería Informática, Software</i></p>
-                            
-                            <br>
-                            
-                            <p><strong>HERMANOS NARANJO</strong></p>
-                            <p><i>2008 - 2010<br>Desarrollo de Aplicaciones Informáticas</i></p>
-                            
-                            <br>
-                            
-                            <p><strong>IES HOZGARGANTA</strong></p>
-                            <p><i>2006 - 2008</i><br>Bachillerato Tecnológico</p>
-                        
-                        </div>
-                        
-                        <br/>
-                    
-                    </div>
-                    
-                    <!-- Columna Derecha -->
-                    <div class="col-md-4 col-xs-12">
-                        
-                        <a name="aptitudes"></a>
-                        
-                        <div id="mainDerechaDentro">
-                            
-                            <h4 class="text-center"><strong>Aptitudes</strong></h4>
-                            
-                            <hr style="border: 1px solid black">
-                            
-                            <strong>Inglés</strong>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            
-                            <strong>PHP</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                            </div>
-                            
-                            <strong>MySQL</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                            </div>
-                            
-                            <strong>C#</strong>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
-                            </div>
-
-                            <strong>.NET</strong>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
-                            </div>
-                            
-                            <strong>Linux</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            
-                            <strong>Mac OS</strong>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-                            </div>
-
-                            <strong>JavaScript</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                            </div>
-                            
-                            <strong>HTML5</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                            </div>
-
-                            <strong>CSS3</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            
-                            <strong>Git & Github</strong>
-                            <div class="progress progress-striped">
-                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                            </div>
-                        
-                        </div>
-                    
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <div id="footer" class="panel-footer">
-                
-                <br />
-                
-                &copy; <time id="year"></time> Página Web de Alejandro García Vallecllo. Todos los derechos reservados.
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="text-primary">A</span>lejandro <span class="text-primary">G</span>arcía
+            </a>
             
-            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-    </body>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="text-primary">Alejandro</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Senior Software Developer</h2>
+                        <p class="hero-description">
+                            Passionate about creating efficient, scalable solutions with .NET, PHP, and modern web technologies. 
+                            Currently building innovative tools at DocPlanner.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-envelope me-2"></i>Get In Touch
+                            </a>
+                            <a href="#about" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-user me-2"></i>Learn More
+                            </a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://www.linkedin.com/in/alejandro-garc%C3%ADa-vallecillo-57172846/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/OwboxAl3x" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:agarciavallecillo@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="images/FotoPerfil.jpeg" alt="Alejandro García Vallecillo" class="profile-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="mb-4">Hello! I'm Alejandro García Vallecillo</h3>
+                        <p class="mb-4">
+                            I'm a <span id="age"></span>-year-old Software Engineer with a Computer Science degree from the University of Granada, 
+                            specializing in software development. I also hold a Higher Technical Degree in Computer Application Development.
+                        </p>
+                        <p class="mb-4">
+                            I'm passionate about programming and continuous learning. As a self-taught developer, I spend my free time 
+                            researching new programming languages and technologies. I believe in writing clean, efficient code and 
+                            staying up-to-date with the latest industry trends.
+                        </p>
+                        <div class="about-stats">
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <h4>5+</h4>
+                                        <p>Years Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <h4>20+</h4>
+                                        <p>Projects Completed</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <h4>10+</h4>
+                                        <p>Technologies</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="stat-item">
+                                        <h4>100%</h4>
+                                        <p>Commitment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image">
+                        <div class="skills-preview">
+                            <div class="skill-item">
+                                <i class="fab fa-microsoft"></i>
+                                <span>.NET Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-php"></i>
+                                <span>PHP Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>Database Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">My career journey</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="timeline">
+                        <!-- DocPlanner -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Senior Software Developer</h4>
+                                    <h5 class="company">DocPlanner</h5>
+                                    <span class="period">September 2020 - Present</span>
+                                </div>
+                                <p class="timeline-description">
+                                    Working on .NET projects developing tools for experience and product teams. 
+                                    Involved in building scalable solutions that serve millions of users worldwide.
+                                </p>
+                                <div class="timeline-technologies">
+                                    <span class="tech-tag">.NET</span>
+                                    <span class="tech-tag">C#</span>
+                                    <span class="tech-tag">SQL Server</span>
+                                    <span class="tech-tag">Azure</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ingeniesia -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Web Developer</h4>
+                                    <h5 class="company">Ingeniesia Desarrollo Cloud</h5>
+                                    <span class="period">October 2018 - September 2020</span>
+                                </div>
+                                <p class="timeline-description">
+                                    Worked as a web developer on the ClinicCloud application, managing data migration 
+                                    for new clients and developing new features for the healthcare management platform.
+                                </p>
+                                <div class="timeline-technologies">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML/CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Puleva -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Software Development Intern</h4>
+                                    <h5 class="company">Puleva Biosearch Life</h5>
+                                    <span class="period">March 2010 - June 2010</span>
+                                </div>
+                                <p class="timeline-description">
+                                    Completed internship developing a new system using Microsoft SharePoint 
+                                    as part of the Computer Application Development program.
+                                </p>
+                                <div class="timeline-technologies">
+                                    <span class="tech-tag">SharePoint</span>
+                                    <span class="tech-tag">C#</span>
+                                    <span class="tech-tag">.NET</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">What I work with</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Programming Languages -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-code"></i>
+                            <h4>Programming Languages</h4>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">C#</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-tools"></i>
+                            <h4>Frameworks & Tools</h4>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">.NET Framework</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Other Skills</h4>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">Linux</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">macOS</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">English</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item-detailed">
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">My academic background</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="education-timeline">
+                        <!-- University -->
+                        <div class="education-item" data-aos="fade-up">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-content">
+                                <h4>Computer Science Engineering</h4>
+                                <h5>University of Granada</h5>
+                                <span class="period">2014 - 2019</span>
+                                <p>Software Engineering specialization. Focused on software development, algorithms, and system design.</p>
+                            </div>
+                        </div>
+
+                        <!-- Technical Degree -->
+                        <div class="education-item" data-aos="fade-up">
+                            <div class="education-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="education-content">
+                                <h4>Higher Technical Degree</h4>
+                                <h5>Computer Application Development - Hermanos Naranjo</h5>
+                                <span class="period">2008 - 2010</span>
+                                <p>Comprehensive program covering software development, database management, and web technologies.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bachillerato -->
+                        <div class="education-item" data-aos="fade-up">
+                            <div class="education-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="education-content">
+                                <h4>Technology Baccalaureate</h4>
+                                <h5>IES Hozgarganta</h5>
+                                <span class="period">2006 - 2008</span>
+                                <p>Technology-focused secondary education preparing for higher technical studies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h5>Email</h5>
+                                        <p><a href="mailto:agarciavallecillo@gmail.com">agarciavallecillo@gmail.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-content">
+                                        <h5>Phone</h5>
+                                        <p>+34 697 920 171</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="social-links-large">
+                                <a href="https://www.linkedin.com/in/alejandro-garc%C3%ADa-vallecillo-57172846/" target="_blank" class="social-link-large">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/OwboxAl3x" target="_blank" class="social-link-large">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="mailto:agarciavallecillo@gmail.com" class="social-link-large">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; <span id="current-year"></span> Alejandro García Vallecillo. All rights reserved.</p>
+                    <p class="footer-note">Built with ❤️ using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/modern-script.js"></script>
+</body>
 </html>
